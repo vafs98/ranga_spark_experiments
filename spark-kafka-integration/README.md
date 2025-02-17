@@ -18,22 +18,22 @@
 
 ## Creating a Kafka topic
 ```sh
-$KAFAK_HOME/bin/kafka-topics.sh --create --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --replication-factor 3 --partitions 5 --topic <TOPIC_NAME>
+$KAFKA_HOME/bin/kafka-topics.sh --create --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --replication-factor 3 --partitions 5 --topic <TOPIC_NAME>
 ```
 
 ## Describe a Kafka topic
 ```sh
-$KAFAK_HOME/bin/kafka-topics.sh --describe --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --topic <TOPIC_NAME>
+$KAFKA_HOME/bin/kafka-topics.sh --describe --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --topic <TOPIC_NAME>
 ```
 
 ## Producing messages to Kafka topic
 ```sh
-$KAFAK_HOME/bin/kafka-console-producer.sh --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --topic <TOPIC_NAME>
+$KAFKA_HOME/bin/kafka-console-producer.sh --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --topic <TOPIC_NAME>
 ```
 
 ## Consuming messages from Kafka topic
 ```sh
-$KAFAK_HOME/bin/kafka-console-consumer.sh --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --topic <TOPIC_NAME> --from-beginning
+$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server <BOOTSTRAP_SERVER_HOST>:<PORT> --topic <TOPIC_NAME> --from-beginning
 ```
 
 ## Login to spark gateway node (for example mynode.host.com) and create the application deployment `/apps/spark/spark-kafka-integration` directory.
